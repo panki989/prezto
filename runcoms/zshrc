@@ -11,3 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+# Load my alias file
+if [ -f ~/.bash_aliases ]; then
+        source ~/.bash_aliases
+else
+        print "404:alias not found."
+fi
