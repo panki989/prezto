@@ -17,3 +17,6 @@ if [ -f ~/.bash_aliases ]; then
 else
         print "404:alias not found."
 fi
+
+# Reload zsh shell
+alias rl="source ~/.zshrc"
